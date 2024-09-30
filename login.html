@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BIBLIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="form-container">
+            <h1>Welcome Back, Bibliophile</h1>
+            <form action="php/login.php" method="POST"> <!-- Link to your PHP script -->
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+            <p class="signup">Don't have an account? <a href="signup.html">Sign up here!</a></p>
+        </div>
+    </div>
+</body>
+</html>
