@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="css/user_dashboard.css">
+</head>
+<body>
+    <!-- Main container for the dashboard -->
+    <div class="dashboard-container">
+        <!-- Welcome Message Section -->
+<div class="welcome-message">
+    <form action="welcome.php" method="POST">
+        <h1>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?></h1>
+        <input type="hidden" name="username" value="<?php echo htmlspecialchars($_SESSION['username']); ?>">
+    </form>
+</div>
+
+        <h1 class="dashboard-title">WELCOME TO USER DASHBOARD !!</h1>
+
+        <div class="buttons-section">
+            <form action="borrow_books.php" method="POST"> <!--PHP adding -->
+                <button class="dashboard-button">BORROW BOOKS HERE</button>
+            </form>
+            <form action="my_borrowed_books.php" method="POST"><!--PHP adding -->
+                <button class="dashboard-button">SHOW MY BORROWED BOOKS</button>
+            </form>
+        </div>
+
+        <form action="request_book.php" method="POST"><!--PHP adding -->
+            <button class="request-button">RESERVE A BOOK !!</button>
+        </form>
+
+        <form action="logout.php" method="POST"><!--PHP adding -->
+            <button class="logout-button">LOGOUT</button>
+        </form>
+
+        <div class="search-container">
+            <form action="search_results.php" method="GET">
+                <input type="text" placeholder="Search for books..." name="search" class="search-input">
+                <button type="submit" class="search-btn">Search</button>
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
