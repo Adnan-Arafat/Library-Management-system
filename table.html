@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library Book Borrowing</title>
-    <link rel="stylesheet" href="css/table.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
 
-    <!-- Form to handle the selection and submission of borrowed books -->
+    <button type="button" class="button-show-borrowed-books" onclick="location.href='borrowed_books.html'">Show Borrowed Books</button>
+
     <form action="process_borrow.php" method="POST" id="borrow-form">
         <h1 class="page-header">List of Books</h1>
 
-        <!-- Container for the book list table -->
         <div class="container-book-list">
             <table class="table-books">
                 <thead>
@@ -24,15 +24,70 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- The PHP code will populate this table dynamically with data from the database -->
                     <tr>
-                        <td colspan="4">Loading books from database...</td>
+                        <td><input type="checkbox" name="book[]" value="book1"></td>
+                        <td>To Kill a Mockingbird</td>
+                        <td>Harper Lee</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book2"></td>
+                        <td>1984</td>
+                        <td>George Orwell</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book3"></td>
+                        <td>The Great Gatsby</td>
+                        <td>F. Scott Fitzgerald</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book4"></td>
+                        <td>Pride and Prejudice</td>
+                        <td>Jane Austen</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book5"></td>
+                        <td>Moby Dick</td>
+                        <td>Herman Melville</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book6"></td>
+                        <td>War and Peace</td>
+                        <td>Leo Tolstoy</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book7"></td>
+                        <td>Ulysses</td>
+                        <td>James Joyce</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book8"></td>
+                        <td>Crime and Punishment</td>
+                        <td>Fyodor Dostoevsky</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book9"></td>
+                        <td>The Odyssey</td>
+                        <td>Homer</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="book[]" value="book10"></td>
+                        <td>Les Misérables</td>
+                        <td>Victor Hugo</td>
+                        <td>4</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <!-- Bottom button for borrowing selected books -->
         <button type="submit" class="button-borrow-books">Borrow Selected Books</button>
     </form>
 

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Reviews</title>
+    <link rel="stylesheet" href="css/show-review-style.css">
+</head>
+<body>
+    <h1>Books Review</h1>
+
+    <!-- Filter Dropdown -->
+    <div class="filter-section">
+        <label for="filter-reviews">Filter by stars : </label>
+        <select id="filter-reviews">
+            <option value="">All</option>
+            <option value="5">5 Stars</option>
+            <option value="4">4 Stars</option>
+            <option value="3">3 Stars</option>
+            <option value="2">2 Stars</option>
+            <option value="1">1 Star</option>
+        </select>
+        <button id="filter-btn">Filter Reviews</button>
+    </div>
+
+    <!-- Reviews Section -->
+    <div class="reviews-container">
+        <div class="review-item" data-rating="5">
+            <h3>The Catcher in the Rye</h3>
+            <p>Absolutely loved the character-driven story!</p>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="4">
+            <h3>Harry Potter and the Philosopher's Stone</h3>
+            <p>Great fantasy book, engaging and fun.</p>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="3">
+            <h3>The Great Gatsby</h3>
+            <p>Interesting exploration of the American Dream, but a bit slow for me.</p>
+            <div class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="5">
+            <h3>To Kill a Mockingbird</h3>
+            <p>Powerful story with deep themes of justice and morality.</p>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="2">
+            <h3>Book Title A</h3>
+            <p>Not as exciting as I expected.</p>
+            <div class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="4">
+            <h3>The Hobbit</h3>
+            <p>Very adventurous and beautifully written.</p>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="2">
+            <h3>Book Title B</h3>
+            <p>Plot felt slow and disconnected.</p>
+            <div class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="3">
+            <h3>1984</h3>
+            <p>A dystopian novel with many thought-provoking themes, but heavy at times.</p>
+            <div class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="5">
+            <h3>Pride and Prejudice</h3>
+            <p>A classic love story, beautifully written.</p>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+        <div class="review-item" data-rating="1">
+            <h3>Book Title C</h3>
+            <p>Couldn't finish it, just wasn't interesting.</p>
+            <div class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</div>
+            <button class="details-btn">Details</button>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

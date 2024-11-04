@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Borrowed Books</title>
-    <link rel="stylesheet" href="css/borrowed_books.css"> 
+    <title>Borrowed Books</title>
+    <link rel="stylesheet" href="css/borrowed_books.css"> <!-- Link to the CSS file -->
 </head>
 <body>
 
-    <!-- Header for the page -->
     <h1 class="page-header">My Borrowed Books</h1>
 
     <!-- Container for the borrowed books table -->
@@ -17,16 +16,32 @@
             <thead>
                 <tr>
                     <th>Book Name</th>
-                    <th>Borrow Date</th>
-                    <th>Due Date</th>
-                    <th>Status</th>
+                    <th>Author Name</th>
+                    <th>Date Borrowed</th>
+                    <th>Review</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- The PHP code will populate this table dynamically with data from the database -->
+                <!-- Example rows with random book data -->
                 <tr>
-                    <td colspan="4">Loading borrowed books data...</td>
+                    <td>To Kill a Mockingbird</td>
+                    <td>Harper Lee</td>
+                    <td>2024-10-01</td>
+                    <td><a href="review.html" class="button-review">Review</a></td> <!-- Add your review page link here -->
                 </tr>
+                <tr>
+                    <td>1984</td>
+                    <td>George Orwell</td>
+                    <td>2024-10-02</td>
+                    <td><a href="review.html" class="button-review">Review</a></td>
+                </tr>
+                <tr>
+                    <td>The Great Gatsby</td>
+                    <td>F. Scott Fitzgerald</td>
+                    <td>2024-10-05</td>
+                    <td><a href="review.html" class="button-review">Review</a></td>
+                </tr>
+                <!-- Add more books if necessary -->
             </tbody>
         </table>
     </div>

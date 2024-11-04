@@ -1,50 +1,76 @@
 /* Styling for the whole page */
 body {
-    background-image: url('library-background.jpg'); /* Replace with actual background */
-    background-size: cover;
+    background-color: #f4f4f4;
     font-family: Arial, sans-serif;
-    color: white;
+    color: #333;
     text-align: center;
+    background-image: url('/Images/image-7.jpg');
 }
 
 /* Header styling for the page */
 .page-header {
     font-size: 40px;
     margin-top: 20px;
-    color: rgb(25, 21, 21);
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Container for the borrowed books table */
 .container-borrowed-books {
-    margin: 40px auto;
+    margin: 50px auto;
     width: 80%;
-    background-color: black;
-    padding: 2px;
-    border-radius: 5px;
+    background-color:transparent black;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Styling for the borrowed books table */
 .table-borrowed-books {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 .table-borrowed-books th, .table-borrowed-books td {
     padding: 15px;
-    border: 1px solid black;
-    border-radius: 2px;
+    border: 2px solid black;
     text-align: left;
+    font-size: 18px;
 }
 
 /* Styling for the table header */
 .table-borrowed-books th {
-    background-color: red;
+    background-color: #4CAF50;  /* Green header for a more modern look */
     color: white;
+    font-weight: bold;
 }
 
 /* Styling for the table rows */
 .table-borrowed-books td {
-    background-color: gray;
-    color: black;
-    font-weight: bolder;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hover effect on rows */
+.table-borrowed-books tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Styling for the Review button */
+.table-borrowed-books a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table-borrowed-books a:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
