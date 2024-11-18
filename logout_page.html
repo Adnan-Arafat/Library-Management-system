@@ -24,6 +24,7 @@
       <a href="https://bd.linkedin.com/" target="_blank"><img src="Images/linkedin-icon 1.png" alt="LinkedIn"></a>
     </div>
     <button id="logoutButton" class="logout-btn">Logout</button>
+    <button id="journeyButton" class="journey-btn">Our Journey</button> <!-- New Button Added -->
   </footer>
 
   <!-- Logout Confirmation Popup -->
@@ -62,6 +63,11 @@
     quoteElement.addEventListener('click', function() {
       currentQuote = (currentQuote + 1) % quotes.length;
       quoteElement.innerText = quotes[currentQuote];
+    });
+
+    // JavaScript for navigating to roadmap page
+    document.getElementById('journeyButton').addEventListener('click', function() {
+      window.location.href = 'roadmap.html';
     });
   </script>
 
